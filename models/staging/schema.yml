@@ -1,5 +1,12 @@
 version: 2
 
+sources:
+  - name: products
+    database: steadfast-icon-336102
+    schema: dbt_jandrade
+    tables:
+     - name: products
+
 models:
   - name: stg_customers
     columns:

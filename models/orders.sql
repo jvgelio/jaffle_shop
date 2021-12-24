@@ -34,6 +34,7 @@ final as (
     select
         orders.order_id,
         orders.customer_id,
+        orders.product_id,
         orders.order_date,
         orders.status,
 
