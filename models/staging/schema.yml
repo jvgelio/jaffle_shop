@@ -29,3 +29,14 @@ models:
         tests:
           - accepted_values:
               values: ['credit_card', 'coupon', 'bank_transfer', 'gift_card']
+  - name: stg_products
+    columns:
+      - name: Product_ID
+        tests:
+         - unique
+         - not_null
+      - name: Sale_Price
+        tests:
+         - unique
+         - not_null
+
