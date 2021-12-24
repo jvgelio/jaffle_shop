@@ -8,10 +8,10 @@ products as (
 
 select 
 products.id,
-products.Product_id,
-products.Product_Name,
-sum(orders.amount)
+sum(orders.amount) as value_sold
  from products
 
 join orders
 on orders.product_id = products.id
+group by products.id
+order by value_sold desc
